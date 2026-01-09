@@ -6,12 +6,13 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:37:05 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 10:37:06 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:47:48 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include <iostream>
 
 int main()
 {
