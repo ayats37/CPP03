@@ -6,11 +6,12 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:37:24 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 10:54:13 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:30:01 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
+#include <iostream>
 
 FragTrap::FragTrap() : ClapTrap(){
   Hit_points = 100;
@@ -19,7 +20,7 @@ FragTrap::FragTrap() : ClapTrap(){
   std::cout << "FragTrap default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(std::string name) : ClapTrap(name)
+FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
 {
   Hit_points = 100;
   Energy_points = 100;

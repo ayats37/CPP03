@@ -6,7 +6,7 @@
 #    By: taya <taya@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/09 10:38:21 by taya              #+#    #+#              #
-#    Updated: 2026/01/09 10:38:22 by taya             ###   ########.fr        #
+#    Updated: 2026/01/09 13:41:40 by taya             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CPPC) $(CPPFLAG) -o $(NAME) $(OBJ)
 
-%.o: %.cpp ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.cpp
+%.o: %.cpp ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 	$(CPPC) $(CPPFLAG) -c $< -o $@
 
 clean:

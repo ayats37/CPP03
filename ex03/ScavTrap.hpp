@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:38:26 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 11:01:23 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:37:31 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class ScavTrap :  virtual public ClapTrap
 {
   public :
     ScavTrap();
-    ScavTrap(std::string name);
+    ScavTrap(const std::string& name);
     ~ScavTrap();
 
     void attack(const std::string& target);

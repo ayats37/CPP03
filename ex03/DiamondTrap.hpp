@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:38:08 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 11:16:21 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:38:16 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 #include <string>
-#include <iostream>
 
 class DiamondTrap : public ScavTrap, public FragTrap
 {

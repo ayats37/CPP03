@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:36:48 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 10:55:31 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:18:12 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define CLAPTRAP_HPP
 
 #include <string>
-#include <iostream>
 
 class ClapTrap{
   private :
@@ -24,7 +23,7 @@ class ClapTrap{
     unsigned int Attack_damage;
   public :
     ClapTrap();
-    ClapTrap (std::string name);
+    ClapTrap (const std::string& name);
     ~ClapTrap();
 
     void attack(const std::string& target);

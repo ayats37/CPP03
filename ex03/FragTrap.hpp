@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:38:13 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 11:01:11 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:37:46 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class FragTrap : virtual public ClapTrap
 {
   public :
     FragTrap();
-    FragTrap(std::string name);
+    FragTrap(const std::string& name);
     ~FragTrap();
 
     void highFivesGuys(void);

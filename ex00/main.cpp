@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:36:51 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 10:36:52 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/09 13:12:58 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 
   a.attack("enemy");
   a.takeDamage(20);
-  a.attack("bichbich");
+  a.attack("ptipana");
   a.beRepaired(5);
 
   return 0;
