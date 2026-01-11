@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 10:38:13 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 13:37:46 by taya             ###   ########.fr       */
+/*   Created: 2026/01/09 10:37:27 by taya              #+#    #+#             */
+/*   Updated: 2026/01/11 12:09:54 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,15 @@
 
 class FragTrap : virtual public ClapTrap
 {
+  protected:
+    static const unsigned int	_hitPointsConst = 100;
+		static const unsigned int	_energyPointsConst = 100;
+		static const unsigned int	_attackDamageConst = 30;
   public :
     FragTrap();
     FragTrap(const std::string& name);
+    FragTrap(const FragTrap& other);
+    FragTrap& operator=(const FragTrap& other);
     ~FragTrap();
 
     void highFivesGuys(void);

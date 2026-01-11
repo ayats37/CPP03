@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:38:08 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 13:38:16 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/11 12:00:54 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@
 class DiamondTrap : public ScavTrap, public FragTrap
 {
   private :
-    std::string name;
+    std::string _name;
   public :
     DiamondTrap();
     DiamondTrap(const std::string& name);
+    DiamondTrap(const DiamondTrap& other);
+    DiamondTrap& operator=(const DiamondTrap& other);
     ~DiamondTrap();
     
     void attack(const std::string& target);
