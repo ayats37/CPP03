@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:37:24 by taya              #+#    #+#             */
-/*   Updated: 2026/01/11 11:43:40 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/11 12:48:03 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
   _hitPoints = 100;
   _energyPoints = 100;
   _attackDamage = 30;
-  std::cout << "FragTrap " << name << " constructed" << std::endl;
+  std::cout << "FragTrap " << _name << " constructed" << std::endl;
 }
 
 FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)

@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:36:51 by taya              #+#    #+#             */
-/*   Updated: 2026/01/11 11:05:37 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/11 12:18:03 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int main()
     std::cout << "\n=== Energy runs out ===" << std::endl;
     ClapTrap b("EnergyTest");
     for (int i = 0; i < 12; i++)
-      b.attack("Dummyyyyyy");
+    b.attack("Dummyyyyyy");
     printStatus(b);
     b.beRepaired(5);
 

@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:38:06 by taya              #+#    #+#             */
-/*   Updated: 2026/01/11 12:08:32 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/11 12:39:32 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <iostream>
 
 DiamondTrap::DiamondTrap() : ClapTrap("default_clap_name"), ScavTrap(), FragTrap(), _name("default"){
-  _hitPoints     = FragTrap::_hitPointsConst;   
+  _hitPoints     = FragTrap::_hitPointsConst;
   _energyPoints  = ScavTrap::_energyPointsConst;
   _attackDamage  = FragTrap::_attackDamageConst;
 
