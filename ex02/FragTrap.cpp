@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 10:37:24 by taya              #+#    #+#             */
-/*   Updated: 2026/01/09 13:30:01 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/11 11:43:40 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,39 @@
 #include <iostream>
 
 FragTrap::FragTrap() : ClapTrap(){
-  Hit_points = 100;
-  Energy_points = 100;
-  Attack_damage = 30;
+  _hitPoints = 100;
+  _energyPoints = 100;
+  _attackDamage = 30;
   std::cout << "FragTrap default constructor called" << std::endl;
 }
 
 FragTrap::FragTrap(const std::string& name) : ClapTrap(name)
 {
-  Hit_points = 100;
-  Energy_points = 100;
-  Attack_damage = 30;
+  _hitPoints = 100;
+  _energyPoints = 100;
+  _attackDamage = 30;
   std::cout << "FragTrap " << name << " constructed" << std::endl;
+}
+
+FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
+{
+    std::cout << "FragTrap copy constructor called" << std::endl;
+}
+
+FragTrap& FragTrap::operator=(const FragTrap& other)
+{
+    std::cout << "FragTrap copy assignment operator called" << std::endl;
+    if (this != &other)
+        ClapTrap::operator=(other);
+    return *this;
 }
 
 FragTrap::~FragTrap()
 {
-    std::cout << "FragTrap " << name << " destroyed" << std::endl;
+    std::cout << "FragTrap " << _name << " destroyed" << std::endl;
 }
 
 void FragTrap::highFivesGuys(void)
 {
-    std::cout << "FragTrap " << name << " requests a positive high five!" << std::endl;
+    std::cout << "FragTrap " << _name << " requests a positive high five!" << std::endl;
 }
